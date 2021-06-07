@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디저트카페</title>
+    <style>
+         @font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    
+    * {margin:0; padding:0;}
+    li {list-style:none;}
+    a {text-decoration:none; color:#333; display:block;}
+
+    .box {
+            width:600px;
+            height:900px;
+            background:url('img/img02.jpg') center center / cover no-repeat;
+         
+            
+    }
+    .box .box_in::before {
+                            content:'';
+                            width:100%;
+                            height:100%;
+                            background-color:rgba(0,0,0, .5);
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            z-index:-1;
+                    
+    }
+    .box:hover .box_in{
+                        display:block;
+    }
+    .box .box_in {
+                    padding:120px 82px;
+                    position:relative;
+                    height:100%;
+                    box-sizing:border-box;
+                    z-index:5;
+                    /* z-index는 앞에 가려져 있거나 덮혀있으면 뒤로 보내주는 값 */
+                    display:none;
+                    /* 영역을 아예 없애주는것 */
+
+    }
+    .box_in p {
+                font-size:25px;
+                background-color:yellow;
+                text-align:center;
+                padding:10px 0px;
+
+    }
+    .box_in h3 {
+                font-size:92px;
+                color:#fff;
+                text-align:center;
+                font-family: 'TmonMonsori';
+                letter-spacing:-1px;
+    }
+    .box_in h3 span {
+                        letter-spacing:7px;
+                        color:wheat;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+        <div class="box_in">
+            <p>#인스타를 달군 대세 카페</p>
+            <h3>디저트 카페<br/>
+                <span>BEST 10</span></h3>
+                <!-- span태그는 같은 태그 안에 들어있는 글자에게 일부 다른 스타일을 적용할수 있게 도와줌-->
+
+
+        </div><!--.box_in end-->
+    </div><!--.box end-->
+    
+</body>
+</html>

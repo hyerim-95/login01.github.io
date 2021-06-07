@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘이 가장 이쁘다</title>
+    <style>
+    * {margin:0; padding:0;}
+    li {list-style:none;}
+    a {text-decoration:none; color:#333; display:block;}
+
+    .header h2 {text-align:center;
+                padding-top:20px;}
+
+    .header ul {text-align:center;
+                height:70px;
+                line-height:70px;}
+
+    .header ul li {
+                    display:inline-block;
+                    padding:0 60px;
+    }
+
+    .main_visual {
+                        height:700px;
+                        background:url('img/장미꽃.jpg') center center / cover no-repeat;
+    }
+    .main_visual p {text-align:center;
+                    line-height:700px;
+                    font-size:40px;
+                    }
+
+    .sec01 {padding:100px 0px;}
+    .sec01 h2 {
+                text-align:center;
+                margin-bottom:20px;
+    }
+    .sec01_in {width:1200px;
+               margin:0 auto;}
+
+    .sec01_in::after {content:'';
+                      display:block;
+                      clear:both;}
+
+    .sec01_in div {float:left;
+                    width:386px;
+                    margin-right:20px;
+                    border: 1px solid black;
+                    box-sizing: border-box;
+                               
+    }
+    .sec01_in div img {width:100%;}
+    .sec01_in div:last-child {margin-right:0;}
+    .sec01_in div dl {text-align:center;}
+    .sec01_in div dt {  font-size: 20px;
+                        font-weight:bold;
+                        padding:20px 0;}
+    .sec01_in div dd {padding-bottom:20px;}
+
+
+
+
+
+    .footer {
+             height:70px;
+             line-height:70px;
+             text-align:center;
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>LOGO</h2>
+
+        <ul>
+
+            <li>menu01</li>
+            <li>menu02</li>
+            <li>menu03</li>
+            <li>menu04</li>
+
+        </ul>
+    </div><!--.header end-->
+
+    <div class="main_visual">
+
+            <p>오늘이 가장 예쁘다.</p>
+    
+    </div><!--.main_visual end -->
+
+    <div class="sec01">
+        <h2>오늘이 예쁘다</h2>
+            <div class="sec01_in">
+
+                <div>
+                    <img src="img/img01.jpg" alt="아보카도 사진"/>
+                    <dl>
+                        <dt>TITLE</dt>
+                        <dd>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</dd>
+
+                    </dl>
+                </div>
+                
+
+                <div>
+                    <img src="img/img01.jpg" alt="아보카도 사진"/>
+                    <dl>
+                        <dt>TITLE</dt>
+                        <dd>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</dd>
+    
+                    </dl>
+                </div>
+                    
+                    
+                <div>
+                        <img src="img/img01.jpg" alt="아보카도 사진"/>
+                        <dl>
+                            <dt>TITLE</dt>
+                            <dd>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</dd>
+        
+                        </dl>
+                </div>
+            </div><!--.sec01_in end-->
+    </div><!--.sec01 end-->
+
+    <div class="sec02">
+        <div class="sec02_in">
+            <img src="img/img01.jpg" alt="아보카도 사진"/>
+            <dl>
+                <dt>ABOUT</dt>
+                <dd>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </dd>
+            </dl>
+
+
+        </div>
+    </div><!--.sec02 end-->
+
+    <div class="footer">
+        web site
+    </div><!--.footer end-->
+   
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스정렬+그림자 연습</title>
+    <style>
+    * {margin:0; padding:0;}
+    li {list-style:none;}
+    a {text-decoration:none; color:#333, display:block;}
+        h2{text-align:center;
+            font-size:40px;
+            margin:40px;}
+    .section {width:1200px;
+             
+                margin:0 auto;
+               
+            
+    }
+
+    .section::after{content:'';
+                    display:block;
+                    clear:both;}
+    .section div {
+                    width: 285px;
+                    background-color:rgb(246, 142, 23);
+                    float:left;
+                    margin-right:20px;
+                    overflow:hidden;
+                    border-radius:20px;
+                    box-shadow: 0px 0px 10px black;
+    }
+    .section div:last-child {margin-right:0;}
+    .section div img {width:100%;}
+    .section div dl {padding:20px;}
+    .section div dl dt {font-size:30px;
+                        font-weight:bold;}
+    </style>
+</head>
+<body>
+    <h2>박스정렬+그림자 연습중</h2>
+    <div class="section">
+    <div>
+        <img src="img/꽃밭.jpg" alt="양귀비꽃"/>
+        <dl>
+            <dt>title</dt>
+            <dd> It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</dd>
+        
+        </dl>
+    </div>
+
+    <div>
+        <img src="img/꽃밭.jpg" alt="양귀비꽃"/>
+        <dl>
+            <dt>title</dt>
+            <dd> It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</dd>
+        
+        </dl>
+    </div>
+
+    <div>
+        <img src="img/꽃밭.jpg" alt="양귀비꽃"/>
+        <dl>
+            <dt>title</dt>
+            <dd> It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</dd>
+        
+        </dl>
+    </div>
+
+    <div>
+        <img src="img/꽃밭.jpg" alt="양귀비꽃"/>
+        <dl>
+            <dt>title</dt>
+            <dd> It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</dd>
+        
+        </dl>
+    </div>
+
+    </div><!--.section end-->
+</body>
+</html>

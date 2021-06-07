@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4번 레이아웃 + 스타일</title>
+    <style>
+        * {margin:0; padding:0;}
+    li {list-style:none;}
+    a {text-decoration:none; color:#333; display:block;}
+
+    .cont02 {
+                background-color:rgb(39, 125, 182);
+                padding:100px 0;
+                text-align:center;
+                }
+    .cont02 article img {
+                            border-radius:50%;
+                            border:2px solid #000;
+                            transition:1s
+    }
+    .cont02 article {
+                        display:inline-block; /* 딱 맞게 가로정렬을 하지 않아도 되서 */
+                        width:370px;
+                        margin:0 40px;
+                        
+    }
+    .cont02 article:hover img {
+                                transform:rotateY(180deg);
+
+    }
+    .cont02 h3 {
+                    color:#fff;
+                    font-size:40px;
+                    margin-bottom:50px;
+    }
+    .cont02 article p {
+                        color:#fff;
+                        margin-top: 20px;
+    }
+    .img {
+            width:400px;
+            height:400px;
+            border:2px solid yellow;
+            border-radius:50%;
+            overflow:hidden;
+    }
+    .img img {
+                width:100%; 
+        
+               
+    }
+
+    </style>
+</head>
+<body>
+    <body>
+        <section class="cont02">
+            <h3>hot contents</h3>
+            <div>
+                <article>
+                    <img src="http://via.placeholder.com/200" alt="상품이미지"/>　
+                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                </article>
+    
+                <article>
+                    <img src="http://via.placeholder.com/200" alt="상품이미지"/>　
+                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                </article>
+    
+                <article>
+                    <img src="http://via.placeholder.com/200" alt="상품이미지"/>　
+                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                </article>
+            </div>
+    
+            <!--직사각형 이미지를 원형으로 바꾸고 싶을때-->
+            <div class="img">
+                <img src="img/img03.jpg" alt="샐러드"/>
+                </div> 
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘이 가장 예쁘다 정답.</title>
+    <style>
+    * {margin:0; padding:0;}
+    li {list-style:none;}
+    a {text-decoration:none; color:#333; display:block;}
+
+    .header h2 {text-align:center;
+                height:60px;
+                
+                line-height:60px;}
+
+    .header ul {
+                
+                height:50px;
+                line-height:50px;
+                text-align:center;
+
+                
+    }
+    .header ul li {
+                    display:inline-block;
+                    
+                    padding:0 50px;            
+    }
+
+    .main_visual {
+                    
+                    height:700px;
+                    line-height:700px;
+                    background:url('img/장미꽃.jpg') center center / cover no-repeat;
+                        }
+    .main_visual p {
+                        font-size: 60px;
+                        font-weight:bold;
+                        text-align:center;
+    }
+ /* sec01 시작 */
+
+ .sec01 {padding:100px 0px;}
+    .sec01 h3 {
+                font-size:25px;
+                font-weight:bold;
+                text-align:center;
+                margin-bottom:20px;
+    }
+    .sec01_in {width:1200px;
+               margin:0 auto;}
+
+    .sec01_in::after {content:'';
+                      display:block;
+                      clear:both;}
+
+    .sec01_in div {float:left;
+                   width:386px;
+                   margin-right:20px;
+                   border:1px solid black;
+                   box-sizing:border-box;
+                    
+    }
+    .sec01_in div img {width:100%;}
+    .sec01_in div:last-child {margin-right:0;}
+    .sec01_in div dl {text-align:center;}
+    .sec01_in div dt {  font-size: 20px;
+                        font-weight:bold;
+                        padding:20px 0;}
+    .sec01_in div dd {padding-bottom:20px;}
+
+    /* sec02 시작 */
+
+    .sec02_in {
+                background-color:blueviolet;
+                width:1200px;
+                margin:0 auto;
+    }
+    .sec02_in::after {content:'';
+                        display:block;
+                        clear:both;}
+    .sec02_in div {
+                    width:600px;
+                    float:left;
+                    
+    }
+    .sec02_in dl {
+                    padding:20px;
+                    text-align:center;
+                    color:#fff;
+                   
+                    
+    }
+    .sec02_in div img {width:100%;
+                        display:block; /* 이미지 때문에 생긴 여백을 없애주기 */               
+    }
+    .sec02_in div dl dt {font-size:25px;
+                         font-weight:bold;
+                         margin-bottom:40px;
+                         position:relative;
+                    
+                         }
+  
+
+    .sec02_in dl dt::before {    content:'';
+                                 width:30px;
+                                 height:2px;
+                                 background-color:#fff;
+                                 display:block;
+                                 margin:0 auto;
+                                 position:absolute;
+                                top:40px;}
+                               
+                                 
+                                 
+    .sec02_in dl dd {
+                        line-height:2;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>LOGO</h2>
+
+        <ul>
+
+            <li>menu01</li>
+            <li>menu02</li>
+            <li>menu03</li>
+            <li>menu04</li>
+
+        </ul>
+    </div><!--.header end-->
+
+    <div class="main_visual">
+
+        <p>오늘이 가장 예쁘다.</p>
+
+</div><!--.main_visual end -->
+
+
+
+<div class="sec01">
+<h3>오늘이 예쁘다</h3>
+
+    <div class="sec01_in">
+        <div>
+            <img src="img/img01.jpg" alt="아보카도"/>
+            <dl>
+                <dt>TITLE</dt>
+                <dd>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</dd>
+            </dl>
+        </div>
+
+        <div>
+            <img src="img/img01.jpg" alt="아보카도"/>
+            <dl>
+                <dt>TITLE</dt>
+                <dd>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</dd>
+            </dl>
+        </div>
+
+        <div>
+            <img src="img/img01.jpg" alt="아보카도"/>
+            <dl>
+                <dt>TITLE</dt>
+                <dd>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</dd>
+            </dl>
+        </div>
+
+
+
+    </div><!--.sec01_in end-->
+
+</div><!--.sec01 end -->
+
+<div class="sec02">
+    <div class="sec02_in">
+            <div>
+                 <img src="img/img01.jpg" alt="아보카도 사진"/>
+            </div>
+
+        <div>
+            <dl>
+                <dt>ABOUT</dt>
+                <dd>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </dd>
+            </dl>
+        </div>
+
+        </div><!--.sec02_in end-->
+   </div><!--.sec02 end-->
+
+
+
+</div><!--.sec02 end-->
+    
+</body>
+</html>

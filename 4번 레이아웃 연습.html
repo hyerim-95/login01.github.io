@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4번 레이아웃 연습</title>
+    <style>
+
+* {margin:0; padding:0;}
+    li {list-style:none;}
+    a {text-decoration:none; color:#333; display:block;}
+
+    .header h2 {background-color:yellowgreen;}
+    .header ul {background-color:tan;
+                }
+    .header ul li {display:inline-block;}
+    
+    .main_visual {/* background-color:coral */;
+                  height:500px;
+                  background:url('img/beach.jpg') center center / cover no-repeat;
+                  text-align:center;
+                 }
+    
+    .main_visual h2 {
+                        font-size:40px;
+                        color:black;
+                        letter-spacing:25px;
+                        padding-top:200px;
+                        
+    }
+    .main_visual p {background-color:cornflowerblue;
+                    color:#fff;
+                    font-size:18px;
+                    height:40px;
+                    width:240px;
+                    margin:0 auto;
+                    line-height:40px;
+                    margin-top:50px;}
+
+    
+    .con01_in {width:1200px;
+                margin:0 auto;}
+    
+    .con01 {padding:100px 0;}
+    .con01 h2 {text-align:center;
+               font-size:35px;}
+
+    .con01_in::after{
+                    content:'';
+                    display:block;
+                    clear:both;
+    }
+    .con01_in div img {width:100%;}
+    .con01_in div {border:1px solid black;
+                width:285px;
+                float:left;
+                margin-right:20px;
+                box-sizing:border-box;
+                margin-top:40px;}
+    .con01_in div:last-child{margin-right:0;}
+    .con01_in div dl {margin:20px;}
+    .con01_in div dl dt {font-size:23px;
+                         font-weight:bold;
+                         padding-bottom:20px;}
+
+
+                  
+    
+    .con02 {background-color:rgb(52, 126, 223);
+            height:700px;
+          
+       }
+    .con02 h2 {
+                font-size:35px;
+                color:#fff;
+                text-align:center;
+                padding:100px 0px;
+
+    }
+    .con02_in {width:1200px;
+               margin:0 auto;}
+    .con02_in::after {content:'';
+                      display:block;
+                      clear:both;}
+
+    .con02_in div {text-align:center;
+                   width:380px;
+                    float:left;
+                    margin-right:30px;
+                    box-sizing:border-box;
+                  }
+    .con02_in div:last-child{margin-right:0;}
+    .con02_in img {transition:1s;
+                    border-radius:50%;}
+    .con02_in img {border:2px solid black;}
+    .con02_in div:hover img {
+                       transform:rotateY(180deg);}
+    .con02_in div p {
+                        padding-top:20px;
+                        color:#fff;
+    }
+    .footer {
+                height:70px;
+                background-color:wheat;
+    }
+    .footer p {line-height:70px;
+               text-align:center;}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>LOGO</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Clients</li>
+                <li>Contact Us</li>
+            </ul>
+    </div><!--.header end-->
+
+    <div class="main_visual">
+
+        <h2>Gypsophila</h2>
+        <p>button</p>
+
+    </div><!--.main_visual end-->
+
+    <div class="con01">
+        <h2>Now Contents</h2>
+
+        <div class="con01_in">
+            <div>
+                    <img src="img/beach.jpg" alt="바다사진"/>
+                    <dl>
+                        <dt>title</dt>
+                        <dd>Nunc volutpat scelerisque elementum. Sed interdum ligula vitae augue efficitur aliquet. </dd>
+
+                    </dl>
+
+            </div>
+
+            <div>
+                <img src="img/beach.jpg" alt="바다사진"/>
+                <dl>
+                    <dt>title</dt>
+                    <dd>Nunc volutpat scelerisque elementum. Sed interdum ligula vitae augue efficitur aliquet.</dd>
+
+                </dl>
+
+            </div>
+
+            <div>
+                <img src="img/beach.jpg" alt="바다사진"/>
+                <dl>
+                    <dt>title</dt>
+                    <dd>Nunc volutpat scelerisque elementum. Sed interdum ligula vitae augue efficitur aliquet.</dd>
+
+                </dl>
+
+            </div>
+
+            <div>
+                <img src="img/beach.jpg" alt="바다사진"/>
+                <dl>
+                    <dt>title</dt>
+                    <dd>Nunc volutpat scelerisque elementum. Sed interdum ligula vitae augue efficitur aliquet.</dd>
+
+                </dl>
+
+            </div>
+
+        </div><!--.con01_in end-->
+
+
+    </div><!--.con01 end-->
+
+<!--con02 start -->
+
+    <div class="con02">
+        <h2>Hot contents</h2>
+        <div class="con02_in">
+                <div>
+                    <img src="http://via.placeholder.com/200x200" alt="상품이미지"/>
+                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. </p>
+                </div>
+
+                <div>
+                    <img src="http://via.placeholder.com/200x200" alt="상품이미지"/>
+                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. </p>
+                </div>
+
+                <div>
+                    <img src="http://via.placeholder.com/200x200" alt="상품이미지"/>
+                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. </p>
+                </div>
+
+                
+
+        </div><!--.con02_in end-->
+    </div><!--.con02 end-->
+
+    <div class="footer">
+        <p>FOOTER INFO</p>
+    </div><!--.footer end-->
+</body>
+</html>

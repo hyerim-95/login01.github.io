@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좌측정렬 레이아웃</title>
+    <style>
+    * {margin:0; padding:0;}
+    li{list-style:none;}
+    a{text-decoration:none; color:#333; display:block;}
+
+    .header h2 {
+                text-align:center;
+                border-bottom: 1px solid gray;
+                padding:20px 0px;          
+    }
+
+    .header ul {
+                 text-align:center;
+                 height:80px;
+                 line-height:80px;
+    }
+    .header ul li {
+                    display:inline-block;
+                    padding:0px 40px;
+    }
+    .main_visual {
+                    height:700px;
+                    background-color: gray;}
+    .main_visual div {
+                        width:1200px;
+                        
+                        margin:0 auto;
+    }
+    .main_visual h3 {font-size:45px;
+                    padding-top:100px;
+                    }
+    .main_visual p {
+                    width:120px;
+                    height:40px;
+                    background-color:rgb(49, 46, 46);
+                    color:#fff;
+                    line-height:40px;
+                    text-align:center;
+                    margin-top:30px;
+
+    }
+    .sec01 {
+            background-color:teal;
+            padding:100px 0px;
+    }
+    .sec01 h3 {text-align: center;
+                font-size: 40px;
+                padding-bottom:50px;}
+    .sec01_in::after {content:'';
+                   display:block;
+                   clear:both;}
+    
+    .sec01_in div {float:left;
+        width:590px;
+                   border:1px solid #fff;
+                   margin-right:20px;
+                   box-sizing:border-box;
+                   }
+              
+    .sec01_in {width:1200px;
+               margin:0 auto;}
+
+    .sec01_in div:last-child {margin-right:0;}
+
+    .sec01_in div dl {
+                        text-align:center;
+                        color:#fff;
+                        padding:20px 0px;
+    }
+    .sec01_in div dl dt {font-size:25px;
+                        font-weight:bold;
+                        margin-bottom:20px;}
+
+    .sec02 {padding:100px 0px;}
+    .sec02 h2 {text-align:center;
+               font-size:40px;
+               margin-bottom:50px;}
+
+    .sec02_in::after{content:'';
+                     display:block;
+                     clear:both;}
+
+    .sec02_in       {width:1200px;
+                     margin:0 auto;}
+    .sec02_in div {
+                    float:left;
+                    width:386px;
+                    margin-right:20px;
+                    box-sizing:border-box; 
+                    
+    }
+    
+    .sec02_in div:last-child{margin-right:0px;}
+    .sec02_in div img {display:block;} 
+    .sec02_in div dl {background-color:teal;
+                      text-align: center;
+                      padding:20px 0px;
+                      color:#fff;}
+    
+    .footer {height:80px;
+            background-color:rgb(32, 28, 28);
+            color:#fff;
+            text-align:center;
+            line-height:80px;}
+    </style>
+
+</head>
+<body>
+    <div class="header">
+       
+        <h2>LOGO</h2>
+        <ul>
+            
+            <li>HOME</li>
+            <li>ABOUTME</li>
+            <li>SHOP</li>
+            <li>CONTACT</li>
+
+        </ul>
+        
+    </div><!--.header end-->
+
+    <div class="main_visual">
+        <div>
+        <h3>100% NATURAL.</br>HOMEMADE</br>FRESH COOKIES.</h3>
+        <p>shop now</p>
+        </div>
+    </div><!--.main_visual end--> 
+
+    <div class="sec01">
+        <h3>첫번째 컨텐츠 제목</h3>
+
+            <div class="sec01_in">
+               <div>
+                    <img src="https://via.placeholder.com/590x550" alt="상품소개이미지"/>
+                    <dl>
+                        <dt>상품소개이름</dt>
+                        <dd>상품소개상세설명</dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <img src="https://via.placeholder.com/590x550" alt="상품소개이미지"/>
+                    <dl>
+                        <dt>상품소개이름</dt>
+                        <dd>상품소개상세설명</dd>
+                    </dl>
+                </div>
+            </div><!--.sec01_in end-->
+
+    </div><!--.sec01 end-->
+
+<div class="sec02">
+    <h2>첫번째 컨텐츠 제목</h2>
+    <div class="sec02_in">
+        <div>
+            <img src="https://via.placeholder.com/386x550/fff000" alt="상품이미지">
+            <dl>
+                <dt>상품소개이름</dt>
+                <dd>상품소개상세설명</dd>
+            </dl>
+        </div>
+
+        <div>
+            <img src="https://via.placeholder.com/386x550/fff000" alt="상품이미지">
+            <dl>
+                <dt>상품소개이름</dt>
+                <dd>상품소개상세설명</dd>
+            </dl>
+        </div>
+
+        <div>
+            <img src="https://via.placeholder.com/386x550/fff000" alt="상품이미지">
+            <dl>
+                <dt>상품소개이름</dt>
+                <dd>상품소개상세설명</dd>
+            </dl>
+        </div>
+
+    </div><!--.sec02_in-->
+
+</div><!--.sec02 end-->
+
+<div class="footer">
+    FOOTER INFO
+</div><!--.footer end-->
+
+</body>
+</html>

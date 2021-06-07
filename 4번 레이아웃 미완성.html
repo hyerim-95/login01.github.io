@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4번 레이아웃</title>
+    <style>
+    * {margin:0; padding:0;}
+    li {list-style:none;}
+    a {text-decoration:none; color:#333; display:block;}
+
+    .main_visual {height:700px;
+                  /* background-color:aqua; */
+                  background:url('img/꽃밭.jpg') center center / cover no-repeat;
+                  position: relative;
+                }
+    .main_visual::before {
+                            content:'';
+                            width:100%;
+                            height:100%;
+                            
+                            position:absolute;
+                            left:0;
+                            top:0;
+    }
+    .main_visual div {
+                      position:absolute;
+                      top:50%;
+                      left:50%;
+                      transform:trantslate(-50%, -50%);}
+                       
+
+    }
+    .main_visual div h2 {
+                            font-size:50px;
+                            color:#fff;
+                            letter-spacing:40px;
+    }
+    .main_visual div p {
+                        background-color:aquamarine;
+                        height:30px;
+                        width:300px;
+                        text-align:center;
+                        line-height:30px;
+                        font-size:18px;
+                        letter-spacing:5px;
+                        margin:0 auto;
+                        
+                        
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main_visual">
+            <div>
+                <h2>Gypsophila</h2>
+                <p>button</p>
+            </div>
+
+    </div><!--.main_visual end-->
+    
+</body>
+</html>

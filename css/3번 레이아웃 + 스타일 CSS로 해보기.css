@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+li {list-style:none;}
+a {text-decoration:none; 
+   color:#333; 
+   display:block;}
+
+   header h1 {/* background-color:aquamarine; */
+                /* float:left; */
+              text-align:left;}
+
+   header nav {/* background-color:yellow; */
+                /* float:right; */
+                text-align:right;}
+
+    header::after {content:'';
+                    display:inline-block;
+                    clear:both;}
+
+   header {width:1200px;
+            margin:0 auto;
+            }
+   
+    header ul li {
+                    display:inline-block;
+                    width:120px;
+                    text-align:center;}
+
+/* 메인비주얼 시작 */
+
+.main_visual {
+                
+                height:700px;
+                background:url('../img/flower.JPG') center center / cover no-repeat;
+                background-attachment: fixed;
+}
+.main_visual p {
+                font-size:60px;
+                text-align:center;
+                line-height:700px;
+                letter-spacing:30px;
+                background-color:rgba(0,0,0, .3);
+                color:#fff;
+}
+
+/* cont01 시작 */
+
+.cont01 {
+            /* background-color:bisque; */
+            width:1200px;
+            margin:100px auto; /* 처음에는 margin:0 auto; 해줘야됨 */
+            
+}
+
+.cont01 h3 {font-size:40px;
+            text-align:center;
+            margin-bottom:50px;}
+
+.cont01::after {content:'';
+                display:block;
+                clear:both;}
+
+.cont01 article {
+                    width:285px;
+                    border:1px solid #000;
+                    box-sizing:border-box;
+                    float:left;
+                    margin-right:20px;
+                    border-radius:20px;
+                    overflow:hidden;    /* 테두리를 벗어나는 이미지는 숨김처리 */
+                }
+.cont01 article dl {padding:30px;}
+.cont01 article dl dt {
+                        font-size:22px;
+                        font-weight:bold;
+                        margin-bottom:20px;}
+
+.cont01 article:last-child {margin-right:0;}
+
+.cont01 article img {width:100%;}
+
+footer {
+            height:100px;
+            background-color:thistle;
+            line-height:100px;
+            text-align:center;
+    }
+                    

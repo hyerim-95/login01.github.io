@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투썸 웹로그인</title>
+    <style>
+    
+    * {margin:0; padding:0;}
+    li {list-style:none;}
+    a {text-decoration:none; color:#333; display:block;}
+
+    body {
+            background:url('img/커피.jpg')center center / cover no-repeat;
+        }
+        legend {
+                 position:absolute;
+                 left:-999999px;
+        }
+        fieldset {
+                    border:0;
+                   
+        }
+        .wrap {
+               
+                width:600px;
+                height:600px;
+                border:1px solid #333;
+                padding:30px;
+                box-sizing:border-box;
+                margin:150px auto;
+                background-color:#fff;
+        }
+        input[type="text"],input[type="password"] {
+                                                    border:1px solid #ccc;
+                                                    width:500px;
+                                                    height:30px;
+                                                    margin-bottom:5px;
+                                                    padding:10px;
+                                                    font-size:14px;}
+
+                                                    
+        label {
+                width:100px;
+                display:inline-block;
+                padding-bottom:5px;
+               
+        }
+        .wrap div {
+                    margin:5px 0px;
+        }
+        button { 
+                    border:0;
+                    width:100%;
+                    height:40px;
+                    margin:10px 0px;
+                    border-radius:10px;
+                   
+                    
+
+
+        }
+
+        .btn1 {
+                background-color:#6C6B6B;
+                color:#fff;
+                margin-top:30px;
+        }
+        .btn2 {
+                background-color: #19CE60;
+                color:#fff;
+        }
+        .btn3 {
+                background-color:#FAE100;
+                color:#fff;
+        }
+        .last { text-align:center;
+
+        }
+        .last .last_in {
+                            margin-left:-30px;
+        }
+        
+        p {
+                display:inline-block;
+                margin-right:30px;
+                padding-top:30px;
+                
+                
+               
+        }
+        p:last-child {margin-right:0px;}
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="POST">
+            <fieldset>
+                <legend>개인정보</legend>
+
+                <div class>
+                    <label>아이디</label>
+                    <input type="text" placeholder="아이디를 입력해주세요"autofocus="off" required>
+                </div>
+
+                <div>
+                    <label>비밀번호</label>
+                    <input type="password" placeholder="비밀번호를 입력해주세요" required autofocus="off">
+                </div>
+
+                <button class="btn1">로그인</button>
+                <button class="btn2">네이버로 로그인</button>
+                <button class="btn3">카카오로 로그인</button>
+
+                <div class="last">
+                <p class="last_in">아이디 찾기</p>
+                <p>비밀번호 찾기</p>
+                <p>회원가입</p>
+                </div>
+
+
+
+
+            </fieldset>
+        
+        </form>
+
+    </div><!--.wrap end-->
+</body>
+</html>

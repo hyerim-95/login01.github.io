@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투썸 모바일 로그인</title>
+
+    <style>
+
+        * {margin:0; padding:0;}
+        li {list-style:none;}
+        a {text-decoration:none; color:#333; display:block;}
+
+        legend {
+                    position:absolute;
+                    left:-999999px;
+        }
+
+        fieldset {
+                    border:0;
+                    text-align:center;
+        }
+
+        .wrap {
+                width:375px;
+                height:800px;
+                border:1px solid #ccc;
+                background-color:white;
+                margin:0 auto;
+                margin-top:50px;
+                padding:300px 0px;
+                box-sizing:border-box;
+                
+        }
+
+
+        input[type="text"], input[type="password"] {
+                                                        width:280px;
+                                                        height:40px;
+                                                        border:1px solid #ccc;
+                                                        padding:0px 10px;
+                                                        
+        }
+
+        label {
+                position:absolute;
+                left:-999999px;
+                width:100px;
+                display:inline-block;
+        }
+        
+
+        .wrap div {
+                    margin:15px 0px;
+        }
+
+        button {
+                    background-color:#ccc;
+                    border-radius:25px;
+                    width:280px;
+                    height:40px;
+                    margin:10px 0px;
+                    
+        }
+
+        .btn .box1 {
+                        background-color:#554646;
+                        color:#fff;
+                        border:0px;
+        }
+
+        .btn .box2 {
+                        background-color:#19CE60;
+                        color:#fff;
+                        border:0px;
+        }
+
+        .btn .box3 {
+                        background-color:#FAE100;
+                        color:#fff;
+                        border:0px;
+        }
+
+        .last ul li {
+                            
+                            display:inline-block;
+                            margin:0px 10px;
+                            color:#898888;
+                            padding:10px 0px;
+                            
+                            
+        }
+    
+    img {
+          margin-top:-240px;
+          margin-bottom:50px;
+    }
+
+
+        
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="POST">
+            <fieldset>
+                <legend>개인정보</legend>
+                
+                <div class="main">
+                    <img src="img/투썸로고.jpg" alt="투썸로고사진"/>
+                </div>
+
+                <div>
+                    <label for="id">아이디</label>
+                    <input type="text" id="id" placeholder="아이디" required>
+                </div>
+
+                <div>
+                    <label>비밀번호</label>
+                    <input type="password" placeholder="비밀번호" required>
+
+                </div>
+
+                <div class="btn">
+                    <button class="box1">로그인</button>
+                    <button class="box2">네이버로 로그인</button>
+                    <button class="box3">카카오로 로그인</button>
+                </div>
+
+                <div class="last">
+                    <ul>
+                        <li>아이디찾기</li>
+                        <li>비밀번호찾기</li>
+                        <li>회원가입</li>
+                    </ul>
+                </div>
+
+            </fieldset>
+        </form>
+    </div><!--.wrap end-->
+</body>
+</html>

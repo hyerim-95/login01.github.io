@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자</title>
+    <style>
+        * {margin:0; padding:0;}
+        li {list-style:none;}
+        a {text-decoration:none; 
+           color: #333; 
+           display:block;}
+           h3 {
+                font-size: 45px;
+                text-align:center;
+           }
+           h3 span {position:relative;}
+           h3 span::before {
+                                content:'';
+                                width:100%;
+                                height:15px;
+                                background-color:rgba(245, 106, 25, 0.719);
+                                position:absolute;
+                                bottom:5px;
+                                left:0;
+                                z-index: -1;
+                                /**z-index는 위치설정
+                                   음수 -> 뒤로 보내기
+                                   양수 -> 앞으로 보내기
+                                   position 값이 있을 때 사용가능**/
+           }
+           .box {
+                    width:500px;
+                    border:1px solid red;
+                    padding:50px;
+                    text-align:center;
+                    margin:0 auto;
+           }
+           .box dl dt {
+                        font-size: 30px;
+                        position:relative;
+                        display:inline-block;
+                        margin-bottom: 70px;}
+           .box dl dt::before {
+                                content:'';
+                                width:1px;
+                                height:50px;
+                                background-color: black;
+                                position:absolute;
+                                top: 50px;
+                                left:50%;
+           }
+           .wrap {
+                    width:400px;
+                    border: 5px dashed green;
+                    padding:40px;
+                    margin:50px auto;
+                    text-align: center;
+
+           }
+           .wrap dl dt {
+                            font-size: 30px;
+                            margin-bottom:75px;
+                            position:relative;
+                            display:inline-block;    
+           }
+           .wrap dl dt::before {
+                                    content:'';
+                                    width:100%;
+                                    height:20px;
+                                    background-color: pink;
+                                    position:absolute;
+                                    bottom:0;
+                                    left:0;
+                                    z-index:-3;
+           }
+    </style>
+</head>
+<body>
+        <h3>
+            <span>box-shadow: 박스 그림자</span>
+        </h3>
+        <div class="box">
+            <dl>
+                <dt>box-shadow</dt>
+                <dd>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+
+            </dl>
+        </div><!--.box end-->
+
+
+    <div class="wrap">
+        <dl>
+            <dt>Where does it come from?</dt>
+            <dd>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</dd>
+
+        </dl>
+    </div><!--.wrap end-->
+</body>
+</html>

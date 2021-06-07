@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate</title>
+    <style>
+        * {margin:0; padding:0;}
+    li {list-style:none;}
+    a {text-decoration:none; color:#333; display:block;}
+
+    .box_x, .box_y, .box_xy {
+                                width:600px;
+                                height:350px;
+                                border: 1px solid black;
+                                margin:30px;
+                                overflow:hidden;
+    } /* 다른 태그끼리 묶어서 동일한 스타일을 주고 싶을때 */
+
+    img {width:100%;
+         transition:1s;}
+    /* 마우스를 올렸을때와 뗐을때 둘 다 자연스럽게 움직이는 효과를 줌 */
+
+    .box_x:hover img {
+             transform: translateX(100px);
+    }
+    /*.box_x img {transform: translateX(100px);} 하게 되면 이미지만 움직이게 됨 */
+    /* box_x:hover img {transform: translateX(100px);} 하게 되면 이미지에 마우스를 올렸을때 움직이는 효과를 줌 */
+    .box_y {
+            transform: translateY(100px);
+    }
+    .box_xy:hover img {
+             transform:translate(100px, 200px);
+    }
+
+    </style>
+</head>
+<body>
+    <!--transform : 회전, 기울기, 크기조절, 이동 가능-->
+    <!--transform : translate x축 또는 y축 으로 이동 -->
+    <!-- x축은 가로, y축은 세로, z축은 대각선 -->
+
+    <div class="box_x box"> <!-- class명은 여러개 쓸 수 있음 / 현재는 2개로 사용중-->
+        <img src="img//flower.JPG" alt="안개꽃"/>
+    </div>
+
+    <div class="box_y">
+        <img src="img//flower.JPG" alt="안개꽃"/>
+    </div>
+
+    <div class="box_xy">
+        <img src="img//flower.JPG" alt="안개꽃"/>
+    </div>
+    
+</body>
+</html>
